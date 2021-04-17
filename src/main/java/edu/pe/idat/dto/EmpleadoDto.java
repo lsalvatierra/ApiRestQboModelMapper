@@ -6,6 +6,9 @@ public class EmpleadoDto {
 	private Long idempleado;
 	private String nombre;
 	private String apellido;
+	
+	
+
 	public Long getIdempleado() {
 		return idempleado;
 	}
@@ -24,12 +27,15 @@ public class EmpleadoDto {
 	public void setApellido(String apellido) {
 		this.apellido = apellido;
 	}
+
+	public EmpleadoDto() {
+	}
 	public EmpleadoDto(Long idempleado, String nombre, String apellido) {
+		super();
 		this.idempleado = idempleado;
 		this.nombre = nombre;
 		this.apellido = apellido;
-	}
-	public EmpleadoDto() {
+		
 	}
 	
 	
